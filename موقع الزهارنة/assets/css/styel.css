@@ -1,0 +1,631 @@
+body {
+    background-image: url(../img/bg.svg);
+    background-size: cover;
+}
+
+/*---------------------------------------------------------- start blog---------------------------------*/
+/* stat nav bar*/
+.nav-item a {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 14px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.nav-item a span img {
+    margin-top: -10px;
+}
+
+.nav-item_1 img {
+    width: 80px;
+    height: 90px;
+    margin-right: -30px;
+}
+
+.btn_vr {
+    position: absolute;
+    background: linear-gradient(268.88deg, #A17316 0.19%, #B2800A 20.19%, #CA9400 42.81%, #E0A700 63.51%, #F1B500 92.62%);
+    border-radius: 100px;
+    width: 258px;
+    height: 41px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 310px;
+    margin-top: -5px;
+}
+
+/* end nav bar*/
+/* start content*/
+.h1_blog {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 90px;
+}
+
+.line_h1_1 {
+    position: absolute;
+    margin-right: -1110px;
+}
+
+.content_blog_right {
+    max-width: 42%;
+    background: #101010;
+    border-bottom: 1px solid #F1B500;
+    margin-left: 100px;
+}
+
+.content_blog_left {
+    background: #101010;
+    height: 330px;
+    border-bottom: 1px solid #F1B500;
+
+}
+
+.img_blog_1 {
+    margin-left: 100px;
+}
+
+.content_blog_right h1,
+.content_blog_left h1 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.icon_lick {
+    position: absolute;
+    margin-right: 260px;
+    margin-top: -5px;
+}
+
+.icon_lick_2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    margin-right: 216px;
+    margin-top: 16px;
+}
+
+.content_blog_right p,
+.content_blog_left p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: justify;
+    letter-spacing: 0.0703846px;
+    color: #CCCCCC;
+}
+
+.content_blog_left p {
+    width: 239px;
+}
+
+hr {
+    border: 0.5px solid rgba(255, 255, 255, 0.15);
+    transform: rotate(179.63deg);
+}
+
+.like_and_shaer h2 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: right;
+    letter-spacing: 0.0703846px;
+    color: #FFFFFF;
+
+}
+
+.content_blog_left h2 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* start chatboot*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fab {
+    position: fixed;
+    bottom: 32px;
+    right: 1400px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #C2942D;
+    box-shadow: 1px 2px 4px grey;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab:hover {
+    cursor: pointer;
+}
+
+.fab img {
+    width: 45%;
+    transition: 0.4s;
+}
+
+.box {
+    position: fixed;
+    bottom: 96px;
+    right: 1408px;
+    height: 0px;
+    transition-delay: 0.2s;
+    width: 80px;
+    transition: 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item {
+    overflow: hidden;
+    border-radius: 50%;
+    transition: 0.2s ease-in;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px grey;
+}
+
+.item img {
+    width: 45%;
+    transition: 0.2s;
+}
+
+.item1 {
+    transition-delay: 0.2s;
+    background: #FFFFFF;
+}
+
+.item2 {
+    transition-delay: 0.4s;
+    background: #FFFFFF;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item:hover img {
+    transform: rotate(360deg);
+    transition: all 0.3s;
+}
+
+.box-active {
+    height: 96px;
+}
+
+.fab-active img {
+    transform: rotate(360deg);
+    width: 40%;
+}
+
+/* end chatboot*/
+
+/* start foooter*/
+
+footer {
+    margin-top: 181px;
+    height: 270px;
+    background: #101010;
+    border-radius: 22px 22px 0px 0px;
+}
+
+.content_footer_right h1 {
+    width: 227px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: 0.0703846px;
+    color: #B8B8B8;
+    margin-right: 110px;
+
+}
+
+.logo_footer {
+    position: absolute;
+    margin-top: -90px;
+}
+
+footer ul li {
+    list-style: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #B8B8B8;
+
+}
+
+.kayan {
+    width: 140px;
+    height: 54px;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+
+/* end foooter*/
+/*---------------------------------------------------------- end blog---------------------------------*/
+/*---------------------------------------------------------- start blog content page-------------------*/
+.h1_blog_content_page {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 90px;
+}
+
+.bg_icon_like {
+    width: 41px;
+    height: 41px;
+    border-radius: 7px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.bg_icon_shaer {
+    width: 320px;
+    height: 41px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 7px;
+}
+
+.h1_article {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: 0.0703846px;
+    color: #FFFFFF;
+}
+
+.prescription h1 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.0703846px;
+    color: #FFFFFF;
+}
+
+.prescription p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: 0.0703846px;
+    color: #FFFFFF;
+    width: 743px;
+}
+
+.h2_blog_content_page {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 112px;
+}
+
+.content_blog_cntar h1 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.content_blog_cntar {
+    background: #101010;
+    height: 250px;
+
+}
+
+/*---------------------------------------------------------- end blog content page-------------------*/
+/*---------------------------------------------------------- start call us -------------------*/
+.cull_us {
+    background: #101010;
+    align-items: center;
+}
+
+.h1_cull_us {
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 90px;
+
+}
+
+.p_cull_us {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    letter-spacing: 0.0703846px;
+    color: #FFFFFF;
+}
+
+#name,
+#phone {
+    width: 271px;
+    height: 40px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    border-radius: 4px;
+}
+
+.form-group select,
+.form-group textarea {
+    width: 271px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    border-radius: 4px;
+
+}
+
+.bg_icon_cull_us {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(180deg, #A17316 0%, #B2800A 21.64%, #CA9400 46.12%, #E0A700 68.51%, #F1B500 100%);
+    border-radius: 8px;
+    margin-right: 143px;
+    margin-top: -16px;
+
+}
+
+.btn_submit_cull_us {
+    width: 101px;
+    height: 30px;
+    border-radius: 100px;
+    background: none;
+    border: 2px solid #E0A700;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.0703846px;
+    color: #E0A700;
+
+}
+
+.img_cull_us {
+    margin-right: 160px;
+}
+
+.conact_cull_us {
+    margin-right: 550px;
+}
+
+.number_cull_us {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.19em;
+    color: #B8B8B8;
+}
+
+.img_sqare {
+    position: absolute;
+    z-index: 1;
+    margin-right: -600px;
+    margin-top: -500px;
+}
+
+.shep_box_img {
+    position: absolute;
+    z-index: 1;
+    width: 218px;
+    height: 300px;
+    margin-top: -300px;
+    margin-right: -15px;
+    background: linear-gradient(180deg, rgba(161, 115, 22, 0.9) 0%, rgba(178, 128, 10, 0.9) 21.64%, rgba(202, 148, 0, 0.9) 46.12%, rgba(224, 167, 0, 0.9) 68.51%, rgba(241, 181, 0, 0.9) 100%);
+    mix-blend-mode: multiply;
+}
+
+/*---------------------------------------------------------- end call us -------------------*/
+/*---------------------------------------------------------- start Our business-------------------*/
+.h1_Our_business {
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 90px;
+
+}
+
+.box_navgation_bar {
+    width: 506px;
+    height: 50px;
+    background: #101010;
+    margin-top: 74px;
+    margin-right: 209px;
+
+}
+
+.btn_navgation_bar_1 {
+    width: 76px;
+    height: 50px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #C2942D;
+    background: none;
+    border-bottom: 1px solid #E0A700;
+
+}
+
+.btn_navgation_bar_2 {
+    height: 49px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: none;
+}
+
+.btn_navgation_bar_2 span img {
+    margin-top: -8px;
+}
+
+.img-4 {
+    margin-top: -280px;
+}
+
+.hover_img {
+    position: absolute;
+    width: 269px;
+    height: 266px;
+    background: linear-gradient(180deg, #A17316 0%, #B2800A 21.64%, #CA9400 46.12%, #E0A700 68.51%, #F1B500 100%);
+    margin-right: -270px;
+    opacity: 80%;
+}
+
+.hover_img h2 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.under_line_hover {
+    position: absolute;
+    margin-right: -155px;
+    margin-top: -6px;
+}
+
+.hover_img h1 {
+    width: 222px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.0703846px;
+    color: #FFFFFF;
+
+}
+
+.icon_more {
+    margin-left: 110px;
+}
+
+
+/*---------------------------------------------------------- end Our business-------------------*/
+/*---------------------------------------------------------- start Our business details-------------------*/
+.h1_our_business {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 90px;
+}
+/*---------------------------------------------------------- end Our business details-------------------*/
+/*---------------------------------------------------------- end vr -------------------*/
+ #panorama {
+    width: 100%;
+    height: 100vh;
+}
+/*---------------------------------------------------------- start vr -------------------*/
+/*---------------------------------------------------------- start index -------------------*/
+.img_hedar_index{
+    position: absolute;
+    margin-left: -32px;
+}
+/*---------------------------------------------------------- end index -------------------*/
+
+
