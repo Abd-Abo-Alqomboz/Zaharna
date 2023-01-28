@@ -23,4 +23,12 @@ $(document).ready(function () {
 
 });
 /*------------------------ */
+/* start blog page */
+function  Blog_content_page() {
+    window.location.assign("Blog content page.html");
+  }
+  function  vr_page() {
+    window.location.assign("vr_page.html");
+  }
+/* end blog page */
 
