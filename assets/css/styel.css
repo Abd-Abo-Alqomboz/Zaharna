@@ -59,6 +59,25 @@ body {
     margin-right: 310px;
     margin-top: -5px;
 }
+.btn_vr_2{
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    border: none;
+    width: 258px;
+    height: 41px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #000;
+    margin-right: 310px;
+    margin-top: -5px;
+
+}
 
 .btn_vr:hover {
     transition: 0.5s;
@@ -1184,6 +1203,12 @@ footer ul li a:hover {
         margin-right: -320px;
         margin-top: 12px;
     }
+    .btn_vr_2{
+        margin: auto;
+        margin-right: -320px;
+        margin-top: 12px;
+
+    }
     .collapse{
         height: 200px;
      }
@@ -1318,12 +1343,12 @@ footer ul li a:hover {
     }
 
     #number_cull_us_2 {
-        margin-right: 16px;
+        margin-left: 60px;
     }
 
     #number_cull_us_1 {
         margin: auto !important;
-        margin-right: -8px !important;
+        margin-right: -25px !important;
     }
 
     .icon_conect_1 {
@@ -1352,6 +1377,8 @@ footer ul li a:hover {
 
     .img_our_2 {
         margin-top: 12px;
+        width: 360px;
+
     }
 
     /* end our business details */
@@ -1429,6 +1456,13 @@ footer ul li a:hover {
         width: 360px;
 
     }
+    
+    #img_o_P_9 {
+        margin-top: 20px !important;
+        width: 360px;
+        width: 360px;
+
+    }
 
     .hovar_box:hover .overlay {
         opacity: 1;
@@ -1490,6 +1524,15 @@ footer ul li a:hover {
         margin-right: -650px;
         margin-top: 12px;
     }
+    .btn_vr_2{
+        margin: auto;
+        margin-right: -650px;
+        margin-top: 16px;
+
+    }
+    .collapse{
+        height: 200px;
+     }
 
     .fab {
         margin: auto;
@@ -1533,6 +1576,139 @@ footer ul li a:hover {
     }
 
     /* end blog content page*/
+    /* start  CULL US*/
+
+    .img_cull_us {
+        width: 700px;
+        margin: auto;
+        margin-top: 82px !important;
+    }
+    .cull_us{
+        margin-right: 150px !important;
+    }
+    .img_sqare {
+        margin: auto;
+        z-index: 1;
+        margin-top: -470px;
+        margin-right: -480px;
+
+    }
+    .shep_box_img {
+        margin: auto;
+        height: 250px;
+        margin-top: -250px;
+        margin-right: 32px;
+    }
+    .conact_cull_us {
+        margin: auto;
+        margin-right: -1px;
+    }
+
+    /* END  CULL US*/
+    .content_blog_right{
+        margin-right: 100px;
+    }
+    .blog_tablet{
+        margin-right: 80px!important;
+    }
+     /* start our business  */
+     .box_navgation_bar {
+    
+        margin: auto;
+        margin-top: 80px;
+        margin-right: 70px;
+    }
+    #img_o_P_1 {
+        margin: auto;
+        margin-right: 16px !important;
+        width: 320px;
+
+    }
+
+    #img_o_P_2
+   {
+        width: 320px;
+        height: 320px;
+        margin: auto;
+        margin-right: 12px;
+    }
+    #img_o_P_3{
+        width: 690px;
+        height: 400px;
+        margin-right: -10px;
+    }
+    #img_o_P_4,#img_o_P_5{
+        margin-top: 320px;
+        width: 320px;
+        margin-right: 12px;
+
+
+    }
+    #img_o_P_6{
+        margin-top: 310px;
+        width: 690px;
+        height: 400px;
+        margin-right: -10px;
+
+
+    }
+    #img_o_P_7{
+        width: 340px;
+        height: 340px;
+        margin-top: 16px;
+    }
+    #img_o_P_8{
+        width: 340px;
+        margin-top: 16px;
+
+    }
+    #img_o_P_9{
+        width: 690px;
+        margin-top: 16px;
+        height: 400px;
+        margin-right: -10px;
+
+    }
+    .hovar_box:hover .overlay {
+        opacity: 1;
+        width: 97%;
+        height: 100%;
+        margin-right: 16px;
+
+    }
+
+    .img_1:hover .overlay {
+        opacity: 1;
+        height: 100%;
+        width: 97%;
+       margin-right: 14px;
+
+    }
+
+    .img_2:hover .overlay {
+        opacity: 1;
+      
+    }
+
+    .img_3:hover .overlay {
+        opacity: 1;
+        height: 100%;
+    }
+
+    .img-4:hover .overlay {
+        opacity: 1;
+        height: 56%;
+        margin-right: 8px;
+    }
+
+    .img_3:hover .overlay {
+        opacity: 1;
+        height: 98%;
+        margin-top: 12px;
+    }
+
+   /* end our business  */
+
     
 
 
