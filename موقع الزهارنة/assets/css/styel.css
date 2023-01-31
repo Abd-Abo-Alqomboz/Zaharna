@@ -59,7 +59,8 @@ body {
     margin-right: 310px;
     margin-top: -5px;
 }
-.btn_vr_2{
+
+.btn_vr_2 {
     position: absolute;
     background-color: #FFFFFF;
     border-radius: 100px;
@@ -126,6 +127,10 @@ body {
     transition: transform .2s;
 
 
+}
+
+#content_blog_left_1 {
+    width: 266px;
 }
 
 .content_blog_left:hover {
@@ -356,12 +361,7 @@ footer ul li a:hover {
     color: #E0A700;
 }
 
-.kayan {
-    width: 140px;
-    height: 54px;
-    background: #FFFFFF;
-    border-radius: 6px;
-}
+
 
 .end_footr {
     height: 55px;
@@ -517,6 +517,7 @@ footer ul li a:hover {
     background: none;
     border: 1px solid rgba(255, 255, 255, 0.41);
     border-radius: 4px;
+    color: #FFFFFF;
 }
 
 .form-group select,
@@ -525,8 +526,20 @@ footer ul li a:hover {
     background: none;
     border: 1px solid rgba(255, 255, 255, 0.41);
     border-radius: 4px;
+    color: #FFFFFF;
 
 }
+
+#select {
+    background-color: transparent;
+}
+
+#textarea:focus {
+    background-color: transparent;
+    color: #FFFFFF;
+
+}
+
 
 .bg_icon_cull_us {
     width: 48px;
@@ -551,6 +564,7 @@ footer ul li a:hover {
     line-height: 24px;
     letter-spacing: 0.0703846px;
     color: #E0A700;
+    margin-right: 26px !important;
 
 }
 
@@ -672,14 +686,21 @@ footer ul li a:hover {
 }
 
 
-.img-4 {
+.img-4,
+.img-8,
+.img-5,
+.img-10,
+.img_11 {
     margin-top: -280px;
     position: relative;
 
 }
 
-.img-5 {
+.img_12 {
     position: relative;
+    margin-right: 20px !important;
+
+
 }
 
 .hovar_box {
@@ -698,7 +719,7 @@ footer ul li a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 48%;
+    height: 100%;
     width: 100%;
     opacity: 0;
     transition: .5s ease;
@@ -708,12 +729,12 @@ footer ul li a:hover {
 
 .hovar_box:hover .overlay {
     opacity: 1;
+    height: 48%;
 
 }
 
 .img-4:hover .overlay {
     opacity: 1;
-    height: 95%;
 }
 
 .img_3,
@@ -725,6 +746,15 @@ footer ul li a:hover {
 .img_3:hover .overlay {
     opacity: 1;
     height: 100%;
+}
+
+.img_11:hover .overlay {
+    opacity: 1;
+    height: 100%;
+}
+
+.img_12:hover .overlay {
+    opacity: 1;
 }
 
 .img_2:hover .overlay {
@@ -739,12 +769,20 @@ footer ul li a:hover {
 
 .img-5:hover .overlay {
     opacity: 1;
-    height: 100%;
-    width: 90%;
-    margin-right: 12px;
+    height: 95%;
 }
 
+.img-10:hover .overlay {
+    opacity: 1;
+    height: 100%;
+    width: 90%;
+    margin-right: 16px;
+}
 
+.img-8:hover .overlay {
+    opacity: 1;
+    height: 95%;
+}
 .text_1 {
     color: white;
     font-size: 20px;
@@ -813,12 +851,6 @@ footer ul li a:hover {
 
 }
 
-
-
-
-
-
-
 /*---------------------------------------------------------- end Our business-------------------*/
 /*---------------------------------------------------------- start Our business details-------------------*/
 .h1_our_business {
@@ -832,72 +864,75 @@ footer ul li a:hover {
     color: #FFFFFF;
     margin-top: 92px;
 }
-
 .icon_lick_3 {
     margin-top: 10px;
     margin-left: 12px;
 }
-
 .icon_lick_3:hover {
     transform: scale(1.1);
-
-
 }
-
 .icon_shaer_3:hover {
     transform: scale(1.1);
 }
-
 /*---------------------------------------------------------- end Our business details-------------------*/
 /*---------------------------------------------------------- end vr -------------------*/
 #panorama {
     width: 100%;
     height: 83vh;
 }
-
 /*---------------------------------------------------------- start vr -------------------*/
 /*---------------------------------------------------------- start index -------------------*/
-.slider_img {
-    height: 95vh;
-    background-image: url(../img/img_index.png);
-    background-size: cover;
+.carousel-inner {
+    height: 70vh;
 }
-
-.box_slider_hedar {
+#img_sqere_hader {
     position: absolute;
-    width: 577px;
-    height: 319px;
-    background: linear-gradient(90.14deg, #A17316 1.54%, #B2800A 22.8%, #CA9400 46.84%, #E0A700 68.84%, #F1B500 99.77%);
-    margin-top: 215px;
+    margin-top: 500px;
+    margin-right: -100px;
+    opacity: 50%;
 }
-
-.box_slider_hedar_content {
-    margin-right: 120px;
+#img_sqere_hader_2 {
+    position: absolute;
+    margin-top: -100px;
 }
+.hedar_content_r h1 {
 
-.box_slider_hedar_content h1 {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: 12px;
     text-transform: uppercase;
-    color: #000000;
-
+    color: #FFFFFF;
+    margin-top: 271px !important;
 }
-
-.box_slider_hedar_content p {
-    width: 447px;
+.hedar_content_r p {
+    width: 480px;
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.0703846px;
-    color: #000000;
-
+    color: #FFFFFF;
 }
-
+.hedar_content_r h2 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    text-align: right;
+    letter-spacing: 0.0703846px;
+    color: #FFFFFF;
+    padding-top: 100px;
+}
+.hedar_content_r h2 a {
+    color: #FFFFFF;
+}
+.hedar_content_r h2 a:hover {
+    color: #F1B500;
+}
 .h1_index {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -908,18 +943,13 @@ footer ul li a:hover {
     color: #FFFFFF;
     margin-top: 110px;
 }
-
 .servies {
     border: 1px solid #F1B500;
 }
-
 .servies:hover {
     transform: scale(1.08);
     transition: 0.5s;
-
-
 }
-
 .servies h1 {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -929,7 +959,6 @@ footer ul li a:hover {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
 .servies p {
     width: 290px;
     font-family: 'Ubuntu';
@@ -941,22 +970,18 @@ footer ul li a:hover {
     letter-spacing: 0.0703846px;
     color: #FFFFFF;
 }
-
 .img_sqere {
     width: 30px;
     position: absolute;
     margin-right: -16px;
     margin-top: -16px;
 }
-
 .bg_abous_us {
     background-image: url(../img/img_about\ us.png);
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     margin-top: 100px;
-
 }
-
 .h1_aoout_us {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -1118,6 +1143,14 @@ footer ul li a:hover {
     margin-top: 40px;
     margin-right: 32px;
 }
+.checked{
+    color: #E0A700;
+}
+.box_star{
+    position: absolute;
+    margin-top: -50px;
+
+}
 
 .slick-prev,
 .slick-next {
@@ -1191,6 +1224,16 @@ footer ul li a:hover {
         overflow-x: hidden;
     }
 
+    .nav-item_1 img {
+        width: 80px;
+        height: 90px;
+        margin-right: -30px;
+    }
+
+    .nav-item {
+        margin-top: 16px;
+    }
+
     .nav-item a {
         margin: auto !important;
         margin-right: -32px !important;
@@ -1198,20 +1241,23 @@ footer ul li a:hover {
 
     }
 
+
     .btn_vr {
         margin: auto;
-        margin-right: -320px;
+        margin-right: -341px;
         margin-top: 12px;
     }
-    .btn_vr_2{
+
+    .btn_vr_2 {
         margin: auto;
         margin-right: -320px;
         margin-top: 12px;
 
     }
-    .collapse{
-        height: 200px;
-     }
+
+    .collapse {
+        height: 250px;
+    }
 
     .fab {
         margin: auto;
@@ -1222,18 +1268,37 @@ footer ul li a:hover {
 
     .box {
         margin: auto;
-        right: 156px;
+        right: 305px;
         z-index: 1;
+        margin-bottom: 32px;
+
 
     }
- 
+
 
     /* start footer*/
+    footer {
+        margin-top: 64px;
+    }
+
     .content_footer_center_1,
     .content_footer_center_2,
     .content_footer_center_3 {
         margin: auto !important;
         margin-right: -32px !important;
+    }
+
+    .content_footer_center_2 {
+        position: absolute;
+        margin-top: 160px !important;
+        margin-right: 180px !important;
+        max-width: 50%;
+
+    }
+
+    .kayan img {
+        margin-top: 20px !important;
+        margin-right: 70px !important;
     }
 
     .content_footer_right {
@@ -1268,13 +1333,34 @@ footer ul li a:hover {
 
     .content_blog_left {
         margin: auto;
-        margin-right: 64px;
+        margin-right: 5%;
+        width: 99%;
+        height: 55%;
+    }
+
+    .content_blog_left p {
+        width: 340px;
+    }
+
+    .icon_lick_2 {
+        margin-right: 300px;
+    }
+
+    #img_blog_1 {
+        width: 355px;
+
+    }
+
+    #content_blog_left_1 {
+        width: 355px;
     }
 
     /* end blog*/
     /* start blog content page*/
     .h1_blog_content_page {
         font-size: 32px;
+        margin: auto;
+        margin-top: 40px;
     }
 
     .bg_icon_like {
@@ -1306,11 +1392,20 @@ footer ul li a:hover {
 
     .content_blog_cntar {
         max-width: 75%;
-        margin-right: 40px;
+        margin-right: 50px;
+    }
+
+    #blog_img_center {
+        width: 280px;
     }
 
     /* end blog content page*/
     /* start  CULL US*/
+    .h1_cull_us {
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
 
     .img_cull_us {
         width: 360px;
@@ -1383,6 +1478,11 @@ footer ul li a:hover {
 
     /* end our business details */
     /* start our business  */
+    .h1_Our_business {
+        margin: auto;
+        margin-top: 32px;
+    }
+
     .box_navgation_bar {
         width: 360px;
         height: 260px;
@@ -1456,11 +1556,12 @@ footer ul li a:hover {
         width: 360px;
 
     }
-    
+
     #img_o_P_9 {
         margin-top: 20px !important;
         width: 360px;
         width: 360px;
+        margin-right: -10px;
 
     }
 
@@ -1469,7 +1570,6 @@ footer ul li a:hover {
         width: 97%;
         height: 100%;
         margin-right: 16px;
-
     }
 
     .img_1:hover .overlay {
@@ -1482,57 +1582,181 @@ footer ul li a:hover {
         opacity: 1;
         height: 96%;
         width: 97%;
-        margin-top: 16px;
         margin-right: 16px;
-    }
-
-    .img_3:hover .overlay {
-        opacity: 1;
-        margin-top: -19px;
-        height: 105%;
+        margin-top: 20px;
     }
 
     .img-4:hover .overlay {
         opacity: 1;
         height: 56%;
-        margin-top: -80px;
+        margin-top: 300px;
         margin-right: 8px;
+
     }
+  
 
     .img_3:hover .overlay {
         opacity: 1;
-        height: 98%;
-        margin-top: 12px;
+        height: 95%;
+        margin-top: 20px;
+
+    }
+
+    .img_12:hover .overlay {
+        opacity: 1;
+        width: 103%;
+        height: 95%;
+        margin-top: 16px;
+        margin-right: -10px;
+
+    }
+
+    .img-5:hover .overlay {
+        opacity: 1;
+        height: 55%;
+        margin-top: 300px;
+    }
+
+    .img-8:hover .overlay {
+        opacity: 1;
+        height: 55%;
+        margin-top: 300px;
+
+    }
+
+    .img_11:hover .overlay {
+        opacity: 1;
+        height: 105%;
+        margin-top: -20px;
+    }
+
+    .img-10:hover .overlay {
+        opacity: 1;
+        height: 100%;
+        width: 92%;
+    }
+
+    /* end our business  */
+    /* start index*/
+    .hedar_content_r {
+        margin: auto;
+        margin-top: -100px !important;
+    }
+
+    .hedar_content_r p {
+        width: 360px;
+
+    }
+
+    .hedar_content_r h2 {
+        margin: auto;
+        margin-top: -64px;
+    }
+
+    #img_sqere_hader_2 {
+        margin-right: 16px;
+    }
+
+    #img_sqere_hader {
+        margin-top: 360px;
+        margin-right: -100px;
+    }
+
+    .sqere_box_text {
+        margin-top: -40px;
+    }
+
+    .sqere_about_us {
+        display: none;
+    }
+
+    .box_abous_us {
+        position: absolute;
+        width: 360px;
+        height: 250px;
+    }
+
+    .box_abous_us p {
+        width: 320px;
+        font-size: 18px;
+    }
+
+    .bg_abous_us {
+        height: 60vh;
+    }
+
+    .content_omar_left {
+        margin: auto;
+        margin-top: 100px;
+        margin-right: -40px !important;
+    }
+
+    .box_text_omar_2 {
+        margin-top: 100px;
+        width: 360px;
+        margin-right: -1px !important;
+    }
+
+    .box_text_omar_2 h1,
+    .box_text_omar_2 h2 {
+        width: 340px;
+    }
+
+    .coma_2 {
+        margin-top: -30px !important;
+    }
+
+    .coma_1 {
+        margin: auto;
+        margin-right: -350px !important;
+        margin-top: -20px !important;
+    }
+
+    .omar {
+        height: 100vh;
+        margin-top: 20px;
     }
 
 
-    /* end our business  */
+
+    /* end index*/
 
 }
 
 /*---------------------------------------------------------- END RESPONSEV -------------------*/
 /*---------------------------------------------------------- start RESPONSEV tablet -------------------*/
-@media(min-width: 768px) and (max-width: 991px){
+@media(min-width: 768px) and (max-width: 991px) {
+    .container {
+        overflow-x: hidden;
+    }
+
+    .nav-item {
+        margin-top: 16px;
+    }
+
     .nav-item a {
         margin: auto !important;
         margin-right: -32px !important;
         margin-top: 12px;
 
     }
+
     .btn_vr {
         margin: auto;
-        margin-right: -650px;
+        margin-right: -655px;
         margin-top: 12px;
     }
-    .btn_vr_2{
+
+    .btn_vr_2 {
         margin: auto;
         margin-right: -650px;
         margin-top: 16px;
 
     }
-    .collapse{
-        height: 200px;
-     }
+
+    .collapse {
+        height: 250px;
+    }
 
     .fab {
         margin: auto;
@@ -1543,19 +1767,23 @@ footer ul li a:hover {
 
     .box {
         margin: auto;
-        right: 156px;
+        right: 710px;
         z-index: 1;
+        margin-bottom: 40px;
 
     }
-      /* start our business details */
-     
-    .prescription p{
+
+    /* start our business details */
+
+    .prescription p {
         width: 690px;
 
     }
-    .img_prescription{
+
+    .img_prescription {
         width: 700px;
     }
+
     .img_our_1 {
         width: 380px;
         height: 360px;
@@ -1566,26 +1794,51 @@ footer ul li a:hover {
     }
 
     /* end our business details */
-      /* start blog content page*/
+    /* start blog content page*/
     .prescription video {
         width: 690px !important;
 
     }
+
     .img_prescription {
         width: 690px;
     }
 
+    .content_blog_cntar {
+        max-width: 50%;
+    }
+
+    #blog_img_center {
+        width: 300px !important;
+    }
+
+    .icon_lick_2 {
+        margin-right: 250px;
+    }
+
+
     /* end blog content page*/
     /* start  CULL US*/
+    .h1_cull_us {
+        margin: auto;
+        margin-top: 32px;
+    }
+
+    .line_h1_1 {
+        margin-right: -690px;
+        margin-top: 8px;
+    }
 
     .img_cull_us {
         width: 700px;
         margin: auto;
         margin-top: 82px !important;
     }
-    .cull_us{
+
+    .cull_us {
         margin-right: 150px !important;
     }
+
     .img_sqare {
         margin: auto;
         z-index: 1;
@@ -1593,58 +1846,81 @@ footer ul li a:hover {
         margin-right: -480px;
 
     }
+
     .shep_box_img {
         margin: auto;
         height: 250px;
         margin-top: -250px;
         margin-right: 32px;
     }
+
     .conact_cull_us {
         margin: auto;
         margin-right: -1px;
     }
 
     /* END  CULL US*/
-    .content_blog_right{
+    /* start blog */
+    .content_blog_right {
         margin-right: 100px;
     }
-    .blog_tablet{
-        margin-right: 80px!important;
+
+    .content_blog_left {
+        margin-right: 60px;
     }
-     /* start our business  */
-     .box_navgation_bar {
-    
+
+    .icon_lick_2 {
+        margin-right: 200px;
+    }
+
+    .h1_blog {
+        margin-top: 32px;
+    }
+
+    /* start blog */
+
+    /* start our business  */
+    .h1_Our_business {
         margin: auto;
-        margin-top: 80px;
-        margin-right: 70px;
+        margin-top: 64px;
     }
+
+    .box_navgation_bar {
+
+        margin: auto;
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+
     #img_o_P_1 {
         margin: auto;
         margin-right: 16px !important;
         width: 320px;
-
     }
 
-    #img_o_P_2
-   {
+    #img_o_P_2 {
         width: 320px;
         height: 320px;
         margin: auto;
         margin-right: 12px;
     }
-    #img_o_P_3{
+
+    #img_o_P_3 {
         width: 690px;
         height: 400px;
         margin-right: -10px;
     }
-    #img_o_P_4,#img_o_P_5{
+
+    #img_o_P_4,
+    #img_o_P_5 {
         margin-top: 320px;
         width: 320px;
         margin-right: 12px;
 
 
     }
-    #img_o_P_6{
+
+    #img_o_P_6 {
         margin-top: 310px;
         width: 690px;
         height: 400px;
@@ -1652,23 +1928,27 @@ footer ul li a:hover {
 
 
     }
-    #img_o_P_7{
+
+    #img_o_P_7 {
         width: 340px;
         height: 340px;
         margin-top: 16px;
     }
-    #img_o_P_8{
+
+    #img_o_P_8 {
         width: 340px;
         margin-top: 16px;
 
     }
-    #img_o_P_9{
+
+    #img_o_P_9 {
         width: 690px;
         margin-top: 16px;
         height: 400px;
-        margin-right: -10px;
+        margin-right: -20px;
 
     }
+
     .hovar_box:hover .overlay {
         opacity: 1;
         width: 97%;
@@ -1680,37 +1960,213 @@ footer ul li a:hover {
     .img_1:hover .overlay {
         opacity: 1;
         height: 100%;
-        width: 97%;
-       margin-right: 14px;
 
     }
 
     .img_2:hover .overlay {
         opacity: 1;
-      
-    }
+        height: 95%;
+        margin-top: 16px;
 
-    .img_3:hover .overlay {
-        opacity: 1;
-        height: 100%;
     }
 
     .img-4:hover .overlay {
         opacity: 1;
-        height: 56%;
+        height: 50%;
         margin-right: 8px;
+        margin-top: 320px;
+        background-color: red;
+
+
     }
 
     .img_3:hover .overlay {
         opacity: 1;
-        height: 98%;
-        margin-top: 12px;
+        height: 95%;
+        margin-top: 17px;
+
+
+
     }
 
-   /* end our business  */
+    .img_12:hover .overlay {
+        opacity: 1;
+        width: 103%;
+        height: 95%;
+        margin-top: 17px;
+        margin-right: -20px;
 
+
+    }
+
+    .img-5:hover .overlay {
+        opacity: 1;
+        height: auto;
+        width: auto;
+        background-color: red;
+
+    }
+
+    .img-8:hover .overlay {
+        opacity: 1;
+        height: 55%;
+        margin-top: 300px;
+        background-color: red;
+
+
+    }
+
+    .img_11:hover .overlay {
+        opacity: 1;
+        height: 105%;
+        margin-top: -20px;
+
+    }
+
+
+    /* end our business  */
+    /* start index*/
+    .hedar_content_r {
+        margin: auto;
+        margin-top: -100px !important;
+    }
+
+    .hedar_content_r p {
+        width: 360px;
+
+    }
+
+    .hedar_content_r h2 {
+        margin: auto;
+        margin-top: -64px;
+    }
+
+    #img_sqere_hader_2 {
+        margin-right: 16px;
+    }
+
+    #img_sqere_hader {
+        margin-top: 360px;
+        margin-right: -100px;
+    }
+
+    .servies p {
+        width: 170px;
+        font-size: 14px;
+    }
+
+
+    .sqere_about_us {
+        margin-right: -90px !important;
+    }
+
+    .bg_abous_us {
+        height: 40vh;
+    }
+
+    .omar {
+        height: 28vh;
+        margin-top: 20px;
+    }
+
+    .box_text_omar_1 {
+        margin-right: 80px;
+    }
+
+    .box_text_omar_2 h1,
+    .box_text_omar_2 h2 {
+        width: 370px;
+    }
+
+    .box_text_omar_2 {
+        margin-top: 20px;
+    }
+
+    .coma_1 {
+        margin: auto;
+        margin-right: -520px !important;
+        margin-top: -25px !important;
+        z-index: 1;
+    }
+
+    .coma_2 {
+        margin: auto;
+        margin-right: -100px;
+    }
+    .item_5 {
+        width: 90px;
+        margin-top: 25px;
     
+    }
+    
+    .c_img {
+        position: absolute;
+        margin-top: -30px;
+        margin-left: 0px;
+        margin-left: 580px;
+    }
+    .c_text {
+        width: 160px;
+        font-size: 12px;
+        
+    }
+    .box_star{
+        margin-left: 85px!important;
+        margin-top: auto;
+        margin-top: -10px;
+    }
+   
+  
+    
+ 
+    
+   
+ 
+
+    /* end index*/
+    /* start footar*/
+    .content_footer_center_1 {
+        margin-right: 100px !important;
+    }
+
+    .content_footer_center_1 {
+        margin-top: 30px !important;
+        margin-right: 240px !important;
+        max-width: 30%;
+
+    }
+
+    .content_footer_center_2 {
+        position: absolute;
+        margin-top: 160px;
+        max-width: 30%;
+
+        margin-right: -35px !important;
+    }
+
+    .content_footer_center_3 {
+        position: absolute;
+        max-width: 30%;
+
+        margin-right: 480px !important;
+        margin-top: 160px !important;
+    }
+
+    .end_footr {
+        margin-top: 112px !important;
+    }
+
+    .kayan img {
+        position: absolute;
+        margin-right: -280px;
+        margin-top: 52px !important;
+    }
+
+    /* end footar*/
+
+
 
 
 }
+
 /*---------------------------------------------------------- end RESPONSEV tablet -------------------*/

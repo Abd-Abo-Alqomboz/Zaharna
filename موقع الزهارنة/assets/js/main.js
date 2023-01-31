@@ -10,6 +10,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+     
+     
     });
 });
 $(document).ready(function () {
@@ -27,8 +29,12 @@ $(document).ready(function () {
 function  Blog_content_page() {
     window.location.assign("Blog content page.html");
   }
+  /* end blog page */
+
   function  vr_page() {
     window.location.assign("vr_page.html");
   }
-/* end blog page */
+function  servies() {
+    window.location.assign("our business.html");
+  }
 
