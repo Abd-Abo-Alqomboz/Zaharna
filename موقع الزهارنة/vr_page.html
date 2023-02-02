@@ -11,17 +11,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
 
     <!-- styel  -->
     <link rel="stylesheet" href="./assets/css/styel.css">
-        <!-- anmation -->
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- anmation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
-<body data-aos="fade-up"data-aos-delay="150" data-aos-duration="2500">
-       <!-- start nav bar -->
-       <div class="container">
+
+<body data-aos="fade-up" data-aos-delay="150" data-aos-duration="2500">
+    <!-- start nav bar -->
+    <div class="container">
         <nav class="navbar navbar-expand-lg ">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +39,7 @@
                                     src="./assets/img/icon_home.svg"></span>الرئيسة </a>
                     </li>
                     <li class="nav-item ml-4">
-                        <a class="nav-link" href="./Our business.html" ><span class="ml-1"> <img
+                        <a class="nav-link" href="./Our business.html"><span class="ml-1"> <img
                                     src="./assets/img/icon_kitchen.svg"></span> أعمالنا </a>
 
                     </li>
@@ -47,33 +48,34 @@
                                     src="./assets/img/icon_navbar_blog.svg"> </span> المدونة </a>
                     </li>
                     <li class="nav-item ml-4">
-                        <a class="nav-link" href="./call us.html"><span class="ml-1"> <img src="./assets/img/icon_concet us.svg">
+                        <a class="nav-link" href="./call us.html"><span class="ml-1"> <img
+                                    src="./assets/img/icon_concet us.svg">
                             </span> تواصل معنا </a>
-                    </li>  
+                    </li>
                     <li class="nav-item_6">
                         <button type="button" class="btn btn_vr_2"><span class=""><img
                                     src="./assets/img/vr_img.gif"></span> تمتع بتجربة “الواقع الافتراضي”</button>
-                    </li>   
+                    </li>
                 </ul>
             </div>
         </nav>
     </div>
     <!-- end nav bar -->
-    
+
     <section>
+        <!-- float action buuton-->
+        <div class="fab">
+            <img src="./assets/img/icon_chatboot.svg" alt="">
+        </div>
+        <div class="box">
+            <a href="" class="item item1"> <img src="./assets/img/icon_watsup_2.svg" alt=""></a>
+            <a href="" class="item item2"> <img src="./assets/img/icon_masanger_chatboot.svg" alt=""></a>
+        </div>
+        <!-- float action buuton-->
         <div class="mt-3" id="panorama" dir="auto"></div>
 
 
     </section>
-
-
-
-  
-
-   
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.6.2.min.js"
         integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
@@ -87,107 +89,107 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
         integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
         crossorigin="anonymous"></script>
-        <!-- vr -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+    <!-- vr -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 
 
-        <script  src="./assets/js/main.js"></script>
-            <!-- JavaScript anmaiton -->
-            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-            <script>
-                AOS.init();
-            </script>
-        <script>
-            
-            
-pannellum.viewer('panorama', {
-   
-   "autoLoad": true,
-   "autoRotate": -2,
-   "default": {
-       "firstScene": "circle",
-       "author": "Matthew Petroff",
-       "sceneFadeDuration": 2000
-   },
+    <script src="./assets/js/main.js"></script>
+    <!-- JavaScript anmaiton -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
 
-   "scenes": {
-       "circle": {
-           "title": "Mason Circle",
-           "hfov": 110,
-           "pitch": 0,
-           "yaw": 110,
-           "type": "equirectangular",
-           "panorama": "https://pannellum.org/images/alma.jpg",
-           "hotSpots": [
-               {
-                   "pitch": -2.1,
-                   "yaw": 132.9,
-                   "type": "scene",
-                   "text": "Spring House or Dairy",
-                   "sceneId": "house"
-               },
-               {
-                   "pitch": 2,
-                   "yaw": 0,
-                   "type": "scene",
-                   "text": "Spring House or Dairy",
-                   "sceneId": "circle2"
-               },
-               {
-                   "pitch": 2,
-                   "yaw": 350,
-                   "type": "scene",
-                   "text": "Spring House or Dairy",
-                   "sceneId": "circle2"
-               }
-           ]
-       },
-        "circle2": {
-           "title": "Mason Circle",
-           "hfov": 110,
-           "pitch": 0,
-           "yaw": 110,
-           "type": "equirectangular",
-           "panorama": "https://pannellum.org/images/alma.jpg",
-           "hotSpots": [
-               {
-                   "pitch": -2.1,
-                   "yaw": 132.9,
-                   "type": "scene",
-                   "text": "Spring House or Dairy",
-                   "sceneId": "house"
-               },
-               {
-                   "pitch": 2,
-                   "yaw": 152.9,
-                   "type": "scene",
-                   "text": "Spring House or Dairy",
-                   "sceneId": "circle"
-               }
-           ]
-       },
 
-       "house": {
-           "title": "Spring House or Dairy",
-           "hfov": 110,
-           "yaw": 5,
-           "type": "equirectangular",
-           "panorama": "https://pannellum.org/images/bma-0.jpg",
-           "hotSpots": [
-               {
-                   "pitch": -0.6,
-                   "yaw": 37.1,
-                   "type": "scene",
-                   "text": "Mason Circle",
-                   "sceneId": "circle",
-                   "targetYaw": -23,
-                   "targetPitch": 2
-               }
-           ]
-       }
-   }
-});
-        </script>
+        pannellum.viewer('panorama', {
+
+            "autoLoad": true,
+            "autoRotate": -2,
+            "default": {
+                "firstScene": "circle",
+                "author": "Matthew Petroff",
+                "sceneFadeDuration": 2000
+            },
+
+            "scenes": {
+                "circle": {
+                    "title": "Mason Circle",
+                    "hfov": 110,
+                    "pitch": 0,
+                    "yaw": 110,
+                    "type": "equirectangular",
+                    "panorama": "https://pannellum.org/images/alma.jpg",
+                    "hotSpots": [
+                        {
+                            "pitch": -2.1,
+                            "yaw": 132.9,
+                            "type": "scene",
+                            "text": "Spring House or Dairy",
+                            "sceneId": "house"
+                        },
+                        {
+                            "pitch": 2,
+                            "yaw": 0,
+                            "type": "scene",
+                            "text": "Spring House or Dairy",
+                            "sceneId": "circle2"
+                        },
+                        {
+                            "pitch": 2,
+                            "yaw": 350,
+                            "type": "scene",
+                            "text": "Spring House or Dairy",
+                            "sceneId": "circle2"
+                        }
+                    ]
+                },
+                "circle2": {
+                    "title": "Mason Circle",
+                    "hfov": 110,
+                    "pitch": 0,
+                    "yaw": 110,
+                    "type": "equirectangular",
+                    "panorama": "https://pannellum.org/images/alma.jpg",
+                    "hotSpots": [
+                        {
+                            "pitch": -2.1,
+                            "yaw": 132.9,
+                            "type": "scene",
+                            "text": "Spring House or Dairy",
+                            "sceneId": "house"
+                        },
+                        {
+                            "pitch": 2,
+                            "yaw": 152.9,
+                            "type": "scene",
+                            "text": "Spring House or Dairy",
+                            "sceneId": "circle"
+                        }
+                    ]
+                },
+
+                "house": {
+                    "title": "Spring House or Dairy",
+                    "hfov": 110,
+                    "yaw": 5,
+                    "type": "equirectangular",
+                    "panorama": "https://pannellum.org/images/bma-0.jpg",
+                    "hotSpots": [
+                        {
+                            "pitch": -0.6,
+                            "yaw": 37.1,
+                            "type": "scene",
+                            "text": "Mason Circle",
+                            "sceneId": "circle",
+                            "targetYaw": -23,
+                            "targetPitch": 2
+                        }
+                    ]
+                }
+            }
+        });
+    </script>
 
 
 </body>

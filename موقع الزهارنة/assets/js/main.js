@@ -4,26 +4,7 @@ document.querySelector('.fab').addEventListener('click',function(e){
     document.querySelector('.fab').classList.toggle('fab-active');
     });
 /* end float action buuton */
-$(document).ready(function () {
-    $('.autoplay').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-     
-     
-    });
-});
-$(document).ready(function () {
-    $('.one-time').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-    });
 
-});
 /*------------------------ */
 /* start blog page */
 function  Blog_content_page() {
@@ -37,4 +18,39 @@ function  Blog_content_page() {
 function  servies() {
     window.location.assign("our business.html");
   }
+  
+  $(document).ready(function (){
+  $('.autoplay').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1008,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  })
+});
+
 
