@@ -1,3 +1,18 @@
+:root {
+    --plyr-color-main: #E0A700;
+    --plyr-font-size-base: 13px;
+    --plyr-font-size-small: 12px;
+    --plyr-font-size-time: 11px;
+    --plyr-font-size-badges: 9px;
+    --plyr-font-size-menu: var(--plyr-font-size-base);
+    --plyr-font-weight-regular: 500;
+    --plyr-font-weight-bold: 600;
+    --plyr-font-size-captions-medium: 18px;
+    --plyr-font-size-captions-large: 21px;
+
+}
+
+
 body {
     background-image: url(../img/bg.svg);
     background-size: cover;
@@ -23,8 +38,7 @@ body {
 
 .nav-item a:hover {
     color: #E0A700;
-    transition: 0.5s;
-
+    transition: 0.5s ease-in-out;
 }
 
 .nav-item a span img {
@@ -81,10 +95,11 @@ body {
 }
 
 .btn_vr:hover {
-    transition: 0.5s;
     background: #FFFFFF;
     color: #000000;
     transform: scale(1.08);
+    transition: 0.5s ease-in-out;
+
 }
 
 
@@ -134,8 +149,8 @@ body {
 }
 
 .content_blog_left:hover {
-    transition: 0.5s;
-    transform: scale(1.08);
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
 
 }
 
@@ -214,6 +229,17 @@ hr {
     line-height: 12px;
     text-transform: uppercase;
     color: #FFFFFF;
+}
+
+.pagination {
+    margin-right: 360px;
+    margin-top: 64px;
+}
+
+.page-item a {
+    background-color: #000000;
+    color: #FFFFFF;
+    border-color: #E0A700;
 }
 
 /* start chatboot*/
@@ -360,6 +386,7 @@ footer ul li a {
 
 footer ul li a:hover {
     color: #E0A700;
+    transition: all 0.5s ease-in-out;
 }
 
 
@@ -380,6 +407,15 @@ footer ul li a:hover {
     color: #FFFFFF;
 }
 
+.web_kayan {
+    filter: grayscale(60%);
+}
+
+.web_kayan:hover {
+    filter: grayscale(0%);
+    transition: .2s ease-in-out;
+}
+
 /* end foooter*/
 /*---------------------------------------------------------- end blog---------------------------------*/
 /*---------------------------------------------------------- start blog content page-------------------*/
@@ -393,6 +429,17 @@ footer ul li a:hover {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 90px;
+    position: relative;
+}
+
+.h1_blog_content_page::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 40px;
+    border: 3px solid #E0A700;
+    right: -16px;
+    top: -15px;
 }
 
 .bg_icon_like {
@@ -441,6 +488,7 @@ footer ul li a:hover {
     color: #FFFFFF;
     width: 743px;
 }
+
 
 .h2_blog_content_page {
     font-family: 'Ubuntu';
@@ -571,6 +619,7 @@ footer ul li a:hover {
 
 .btn_submit_cull_us:hover {
     transform: scale(1.08);
+    transition: all 0.5s ease;
 }
 
 .btn_submit_cull_us span img {
@@ -632,6 +681,7 @@ footer ul li a:hover {
 
 }
 
+
 .box_navgation_bar {
     width: 506px;
     height: 50px;
@@ -685,20 +735,22 @@ footer ul li a:hover {
 .btn_navgation_bar_2 span img {
     margin-top: -8px;
 }
-.box_mobiel_1{
+
+.box_mobiel_1 {
     position: absolute;
     background: rgba(134, 125, 24, 0.5);
-    width: 266px ;
+    width: 266px;
     height: 270px;
     margin-top: 180px;
     margin-right: -1130px;
     z-index: 1;
     display: none;
 }
-.box_mobiel_2{
+
+.box_mobiel_2 {
     position: absolute;
     background: rgba(134, 125, 24, 0.5);
-    width: 36.5% ;
+    width: 36.5%;
     height: 270px;
     margin-top: 180px;
     margin-right: -843px;
@@ -706,10 +758,11 @@ footer ul li a:hover {
     display: none;
 
 }
-.box_mobiel_3{
+
+.box_mobiel_3 {
     position: absolute;
     background: rgba(134, 125, 24, 0.5);
-    width: 17.5% ;
+    width: 17.5%;
     height: 552px;
     margin-top: 180px;
     margin-right: -270px;
@@ -718,20 +771,22 @@ footer ul li a:hover {
 
 
 }
-.box_mobiel_4{
+
+.box_mobiel_4 {
     position: absolute;
     background: rgba(134, 125, 24, 0.5);
-    width: 266px ;
+    width: 266px;
     height: 270px;
     margin-top: 460px;
     margin-right: -1130px;
     z-index: 1;
     display: none;
 }
-.box_mobiel_5{
+
+.box_mobiel_5 {
     position: absolute;
     background: rgba(134, 125, 24, 0.5);
-    width: 266px ;
+    width: 266px;
     height: 270px;
     margin-top: 460px;
     margin-right: -850px;
@@ -739,10 +794,11 @@ footer ul li a:hover {
     display: none;
 
 }
-.box_mobiel_6{
+
+.box_mobiel_6 {
     position: absolute;
     background: rgba(134, 125, 24, 0.5);
-    width: 266px ;
+    width: 266px;
     height: 270px;
     margin-top: 460px;
     margin-right: -560px;
@@ -750,30 +806,33 @@ footer ul li a:hover {
     display: none;
 
 }
-.box_mobiel_7{
+
+.box_mobiel_7 {
     position: absolute;
     background: rgba(134, 125, 24, 0.5);
-    width: 36.5% ;
+    width: 36.5%;
     height: 270px;
     margin-top: 740px;
     margin-right: -1120px;
     z-index: 1;
     display: none;
 }
-.box_mobiel_8{
+
+.box_mobiel_8 {
     position: absolute;
     background: rgba(134, 125, 24, 0.5);
-    width: 266px ;
+    width: 266px;
     height: 270px;
     margin-top: 740px;
     margin-right: -560px;
     z-index: 1;
     display: none;
 }
-.box_mobiel_9{
+
+.box_mobiel_9 {
     position: absolute;
     background: rgba(134, 125, 24, 0.5);
-    width: 266px ;
+    width: 266px;
     height: 270px;
     margin-top: 740px;
     margin-right: -270px;
@@ -804,9 +863,11 @@ footer ul li a:hover {
 .hovar_box {
     position: relative;
 }
+
 .img_3,
 .img_2,
-.img_1 {
+.img_1,
+.img-10 {
     position: relative;
 }
 
@@ -832,45 +893,69 @@ footer ul li a:hover {
 
 .hovar_box:hover .overlay {
     opacity: 1;
-    max-height: 48%;
+    height: 48%;
+    transition: all 0.6s ease-in-out;
 
 }
 
 .img-4:hover .overlay {
     opacity: 1;
+    height: 95%;
+    transition: all 0.6s ease-in-out;
+
 }
 
 
 
 .img_3:hover .overlay {
     opacity: 1;
+    transition: all 0.6s ease-in-out;
+
+
 }
 
 .img_11:hover .overlay {
     opacity: 1;
+    height: 99%;
+    transition: all 0.6s ease-in-out;
 }
 
 .img_12:hover .overlay {
     opacity: 1;
+    transition: all 0.6s ease-in-out;
+
 }
 
 .img_2:hover .overlay {
     opacity: 1;
+
 }
 
 .img_1:hover .overlay {
     opacity: 1;
-    max-height: 48%;
+    height: 48%;
+    transition: all 0.6s ease-in-out;
 }
 
 .img-5:hover .overlay {
     opacity: 1;
+    height: 95%;
+    transition: all 0.6s ease-in-out;
 }
-
 
 .img-8:hover .overlay {
     opacity: 1;
+    height: 95%;
+    transition: all 0.6s ease-in-out;
 }
+
+.img-10:hover .overlay {
+    opacity: 1;
+    width: 90%;
+    margin-right: 13px;
+    transition: all 0.6s ease-in-out;
+}
+
 .text_1 {
     color: white;
     font-size: 20px;
@@ -951,39 +1036,71 @@ footer ul li a:hover {
     text-transform: uppercase;
     color: #FFFFFF;
     margin-top: 92px;
+    position: relative;
 }
+.h1_our_business::before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 40px;
+    border: 3px solid #E0A700;
+    right: -16PX;
+    top: -15PX;
+}
+
 .icon_lick_3 {
     margin-top: 10px;
     margin-left: 12px;
 }
+
 .icon_lick_3:hover {
     transform: scale(1.1);
 }
+
 .icon_shaer_3:hover {
     transform: scale(1.1);
 }
+
 /*---------------------------------------------------------- end Our business details-------------------*/
 /*---------------------------------------------------------- end vr -------------------*/
 #panorama {
     width: 100%;
     height: 83vh;
 }
+
 /*---------------------------------------------------------- start vr -------------------*/
 /*---------------------------------------------------------- start index -------------------*/
-.carousel-inner {
-    height: 70vh;
+.heder {
+    height: 90vh;
+    background-image: url(../img/img_index.png);
+    background-size: cover;
+    width: 70%;
+    margin-right: 450px;
+    position: relative;
 }
-#img_sqere_hader {
+
+.heder::before {
+    content: '';
     position: absolute;
-    margin-top: 500px;
-    margin-right: -100px;
-    opacity: 50%;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #F1B500;
+    right: -25px;
+    top: 650px;
+
+
 }
-#img_sqere_hader_2 {
+
+.box_slider {
+    width: 577px;
+    height: 300px;
+    background: linear-gradient(90.14deg, #A17316 1.54%, #B2800A 22.8%, #CA9400 46.84%, #E0A700 68.84%, #F1B500 99.77%);
+    margin-top: 215px;
     position: absolute;
-    margin-top: -100px;
+    z-index: 1;
 }
-.hedar_content_r h1 {
+
+.item_slider_heder h1 {
 
     font-family: 'Ubuntu';
     font-style: normal;
@@ -991,36 +1108,25 @@ footer ul li a:hover {
     font-size: 40px;
     line-height: 12px;
     text-transform: uppercase;
-    color: #FFFFFF;
-    margin-top: 271px !important;
+    color: #000000;
+    margin-right: 160px;
+    margin-top: 64px;
+
 }
-.hedar_content_r p {
-    width: 480px;
+
+.item_slider_heder p {
+
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.0703846px;
-    color: #FFFFFF;
+    color: #000000;
+    width: 400px;
+
 }
-.hedar_content_r h2 {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 10px;
-    text-align: right;
-    letter-spacing: 0.0703846px;
-    color: #FFFFFF;
-    padding-top: 100px;
-}
-.hedar_content_r h2 a {
-    color: #FFFFFF;
-}
-.hedar_content_r h2 a:hover {
-    color: #F1B500;
-}
+
 .h1_index {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -1031,13 +1137,29 @@ footer ul li a:hover {
     color: #FFFFFF;
     margin-top: 110px;
 }
+
 .servies {
+    position: relative;
     border: 1px solid #F1B500;
 }
+
+.servies::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #F1B500;
+    bottom: -15px;
+    right: -15px;
+
+}
+
 .servies:hover {
     transform: scale(1.08);
-    transition: 0.5s;
+    transition: 0.5s ease;
+
 }
+
 .servies h1 {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -1047,6 +1169,7 @@ footer ul li a:hover {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
 .servies p {
     width: 290px;
     font-family: 'Ubuntu';
@@ -1058,18 +1181,27 @@ footer ul li a:hover {
     letter-spacing: 0.0703846px;
     color: #FFFFFF;
 }
-.img_sqere {
-    width: 30px;
-    position: absolute;
-    margin-right: -16px;
-    margin-top: -16px;
-}
+
+
+
 .bg_abous_us {
     background-image: url(../img/img_about\ us.png);
     background-size: cover;
     height: 90vh;
     margin-top: 100px;
+    position: relative;
 }
+
+.bg_abous_us::before {
+    content: '';
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    border: 1px solid #F1B500;
+    left: 200px;
+}
+
+
 .h1_aoout_us {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -1082,18 +1214,26 @@ footer ul li a:hover {
     padding-top: 50px;
 }
 
-.sqere_about_us {
-    position: absolute;
-    width: 76px;
-    margin-right: -82px;
-
-}
-
 .box_abous_us {
     position: absolute;
     width: 551px;
     height: 247px;
     background: rgba(0, 0, 0, 0.45);
+    position: relative;
+
+}
+
+.box_abous_us ::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #F1B500;
+    left: 0;
+    bottom: 0;
+    top: 220px;
+    right: 530px;
+
 }
 
 .box_abous_us p {
@@ -1109,10 +1249,7 @@ footer ul li a:hover {
 
 }
 
-.sqere_box_text {
-    position: absolute;
-    margin-right: -32px;
-}
+
 
 .box_text_omar_1 {
     position: absolute;
@@ -1172,10 +1309,18 @@ footer ul li a:hover {
     margin-top: 137px;
 }
 
-.sqere_omar {
+.content_omar_left {
+    position: relative;
+}
+
+.content_omar_left::before {
     position: absolute;
-    margin-right: -310px;
-    margin-top: -25px;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border: 1px solid #E0A700;
+    top: -25px;
+
 }
 
 .coma_1 {
@@ -1198,6 +1343,21 @@ footer ul li a:hover {
 .coustamar {
     background: #101010;
     height: 100px;
+}
+
+.item_1,
+.item_4,
+.item_5,
+.item_6 {
+    filter: grayscale(60%);
+}
+
+.item_1:hover,
+.item_4:hover,
+.item_5:hover,
+.item_6:hover {
+    filter: grayscale(0%);
+    transition: all .2s ease-in-out;
 }
 
 .item_1 {
@@ -1231,10 +1391,12 @@ footer ul li a:hover {
     margin-top: 40px;
     margin-right: 32px;
 }
-.checked{
+
+.checked {
     color: #E0A700;
 }
-.box_star{
+
+.box_star {
     position: absolute;
     margin-top: -50px;
 
@@ -1307,7 +1469,7 @@ footer ul li a:hover {
 
 /*---------------------------------------------------------- end index -------------------*/
 /*---------------------------------------------------------- start vr details  -------------------*/
-.colar{
+.colar {
     width: 50px;
     height: 250px;
     border-radius: 100px;
@@ -1315,32 +1477,122 @@ footer ul li a:hover {
     margin-right: 100px;
     margin-top: 200px;
 }
-.colar_1,.colar_2,.colar_3,.colar_4{
+
+.img_k_1 {
+    margin-right: -12px;
+}
+
+.colar span {
+    display: block;
+
+}
+
+.colar_1,
+.colar_2,
+.colar_3,
+.colar_4 {
     width: 35px;
     height: 35px;
     border-radius: 100px;
+
 }
-.h1_for_finger{
+
+.colar_1 {
+    margin-top: 20px;
+    position: absolute;
+    background: #95A5A6;
+    margin-right: 6px;
+
+
+}
+
+.colar_2 {
+    margin-top: 72px;
+    position: absolute;
+    background: #A17316;
+    margin-right: 6px;
+
+
+
+}
+
+.colar_3 {
+    margin-top: 125px;
+    position: absolute;
+    margin-right: 6px;
+    background-color: #000000;
+
+
+
+}
+
+.colar_4 {
+    margin-top: 182px;
+    position: absolute;
+    background: #F1B500;
+    margin-right: 6px;
+
+
+
+}
+
+.h1_for_finger {
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.0703846px;
     color: #FFFFFF;
 
 
 }
-.h1_for_k{
-    
-font-family: 'Ubuntu';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 12px;
-text-transform: uppercase;
-color: #FFFFFF;
 
+.h1_for_k {
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+.p_for_k {
+    width: 600px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: 0.0703846px;
+    color: #FFFFFF;
+    margin-left: 400px;
+}
+
+.h2_for_k {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 12px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.h2_for_k::before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    border: 1px solid #E0A700;
+    right: -35px;
+    top: -5px;
 }
 
 /*---------------------------------------------------------- end vr details  -------------------*/
@@ -1350,20 +1602,24 @@ color: #FFFFFF;
     .container {
         overflow-x: hidden;
     }
+
     .nav-item_1 img {
         width: 80px;
         height: 90px;
         margin-right: -30px;
     }
+
     .nav-item {
         margin-top: 16px;
     }
+
     .nav-item a {
         margin: auto !important;
         margin-right: -32px !important;
         margin-top: 12px;
     }
-    footer{
+
+    footer {
         height: 100%;
     }
 
@@ -1372,25 +1628,30 @@ color: #FFFFFF;
         margin-right: -325px;
         margin-top: 12px;
     }
+
     .btn_vr_2 {
         margin: auto;
         margin-right: -320px;
         margin-top: 12px;
     }
+
     .collapse {
         height: 250px;
     }
+
     .fab {
         margin: auto;
         right: 300px;
         margin-bottom: 32px;
     }
+
     .box {
         margin: auto;
         right: 305px;
         z-index: 1;
         margin-bottom: 32px;
     }
+
     /* start footer*/
     footer {
         margin-top: 64px;
@@ -1468,9 +1729,22 @@ color: #FFFFFF;
 
     #content_blog_left_1 {
         width: 355px;
+        height: 360px;
     }
+
     #content_blog_left_3 {
-        margin-top: 20px !important;
+        margin-top: -16px !important;
+        height: 360px;
+    }
+
+    #content_blog_left_4 {
+        height: 360px;
+    }
+
+    .pagination {
+        margin: auto;
+        margin-top: 80px;
+        margin-right: 40px;
     }
 
     /* end blog*/
@@ -1499,7 +1773,7 @@ color: #FFFFFF;
         width: 360px;
     }
 
-    .prescription video {
+    .prescription_video {
         width: 360px !important;
 
     }
@@ -1510,11 +1784,18 @@ color: #FFFFFF;
 
     .content_blog_cntar {
         max-width: 75%;
-        margin-right: 50px;
+        margin-right: 40px;
+        height: 270px;
+
     }
 
     #blog_img_center {
-        width: 280px;
+        width: 292px;
+        margin-right: -14px;
+    }
+
+    #icon_lick_2_mobiel {
+        margin-right: 230px !important;
     }
 
     /* end blog content page*/
@@ -1646,7 +1927,7 @@ color: #FFFFFF;
         margin-top: -20px !important;
     }
 
-     #img_o_P_4 {
+    #img_o_P_4 {
         margin-top: 300px !important;
         width: 360px;
         margin-right: 16px !important;
@@ -1658,7 +1939,7 @@ color: #FFFFFF;
         margin-top: 300px !important;
         width: 360px;
 
-    } 
+    }
 
     #img_o_P_7 {
         margin-top: 20px !important;
@@ -1682,114 +1963,132 @@ color: #FFFFFF;
         margin-right: -10px;
 
     }
-    .box_mobiel_1{
+
+    .box_mobiel_1 {
         margin: auto;
         margin-top: 390px;
         width: 360px;
-        height: 362px;       
+        height: 362px;
         display: block;
     }
-    .box_mobiel_2{
+
+    .box_mobiel_2 {
         margin: auto;
         margin-top: 780px;
         width: 360px;
-        height: 362px;       
+        height: 362px;
         display: block;
-    
+
     }
-    .box_mobiel_3{
+
+    .box_mobiel_3 {
         margin: auto;
         margin-top: 1164px;
         width: 350px;
         margin-right: 8px;
-        height: 360px;       
+        height: 360px;
         display: block;
-    
-    
+
+
     }
-    .box_mobiel_4{
+
+    .box_mobiel_4 {
         margin: auto;
         margin-top: 1545px;
         width: 360px;
-        height: 366px;  
+        height: 366px;
         display: block;
 
     }
-    .box_mobiel_5{
+
+    .box_mobiel_5 {
         margin: auto;
         margin-top: 1925px;
         width: 360px;
-        height: 365px;  
+        height: 365px;
         display: block;
 
-    
+
     }
-    .box_mobiel_6{
+
+    .box_mobiel_6 {
         margin: auto;
         margin-top: 2300px;
         width: 360px;
-        height: 370px;  
+        height: 370px;
         display: block;
-
-        
-    
     }
-    .box_mobiel_7{
+
+    .box_mobiel_7 {
         margin: auto;
         margin-top: 2688px;
         width: 360px;
-        height: 360px; 
+        height: 360px;
         display: block;
-
-       
     }
-    .box_mobiel_8{
+
+    .box_mobiel_8 {
         margin: auto;
         margin-top: 3070px;
         width: 360px;
-        height: 360px;  
+        height: 360px;
         display: block;
     }
-    .box_mobiel_9{
+
+    .box_mobiel_9 {
         margin: auto;
         margin-top: 3444px;
         width: 370px;
-        height: 363px;  
-        margin-right: -8px;     
+        height: 363px;
+        margin-right: -8px;
         display: block;
     }
+
     /* end our business  */
     /* start index*/
-    .hedar_content_r {
+    .heder {
         margin: auto;
-        margin-top: -100px !important;
+        margin-right: -1px;
+        width: 100%;
     }
 
-    .hedar_content_r p {
+    .heder::before {
+        right: 0;
+        top: 730px;
+    }
+
+    .box_slider {
         width: 360px;
-
     }
 
-    .hedar_content_r h2 {
+    .item_slider_heder h1 {
         margin: auto;
-        margin-top: -64px;
+        margin-top: 64px;
+        margin-right: 32px;
     }
 
-    #img_sqere_hader_2 {
-        margin-right: 16px;
+    .item_slider_heder p {
+        margin: auto;
+        width: auto;
+        text-align: justify;
+        margin-right: 32px;
+
     }
 
-    #img_sqere_hader {
-        margin-top: 360px;
-        margin-right: -100px;
+    .bg_abous_us::before {
+        right: 300px;
+        top: 20px;
     }
 
-    .sqere_box_text {
-        margin-top: -40px;
+    .box_abous_us ::before {
+        top: 230px;
+        right: 340px;
+        left: -500px;
+
     }
 
-    .sqere_about_us {
-        display: none;
+    #servies {
+        height: 100vh;
     }
 
     .box_abous_us {
@@ -1811,7 +2110,9 @@ color: #FFFFFF;
         margin: auto;
         margin-top: 100px;
         margin-right: -40px !important;
+        position: relative;
     }
+
 
     .box_text_omar_2 {
         margin-top: 100px;
@@ -1840,16 +2141,93 @@ color: #FFFFFF;
         margin-top: 20px;
     }
 
+    .h1_index {
+        margin-top: auto;
+        margin-top: 32px;
+    }
+
 
 
     /* end index*/
+    /* start vr detils*/
+    .img_k_1 {
+        width: 360px;
+    }
+
+    .colar {
+        width: 255px;
+        height: 66px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .colar_1 {
+        margin: auto;
+        margin-top: 14px;
+        margin-right: 32px;
+    }
+
+    .colar_2 {
+        margin: auto;
+        margin-right: 82px;
+        margin-top: 14px;
+
+    }
+
+    .colar_3 {
+        margin: auto;
+        margin-right: 130px;
+        margin-top: 14px;
+
+    }
+
+    .colar_4 {
+        margin: auto;
+        margin-right: 180px;
+        margin-top: 14px;
+
+    }
+
+    .h1_for_finger {
+        margin-right: 12px !important;
+        margin-top: 32px !important;
+    }
+
+    .h1_for_k {
+        margin-right: 12px !important;
+        margin-top: 32px !important;
+
+    }
+
+    .p_for_k {
+        width: 360px;
+        margin-right: 12px !important;
+
+    }
+
+    .img_vr_k_2 img {
+        width: 360px;
+    }
+
+    .img_vr_k_3 img,
+    .img_vr_k_4 img {
+        width: 360px;
+        margin-top: 12px;
+    }
+
+    .img_vr_k_5 img {
+        width: 360px;
+        height: 238px;
+    }
+
+    /* end vr detils*/
 
 }
 
 /*---------------------------------------------------------- END RESPONSEV -------------------*/
 /*---------------------------------------------------------- start RESPONSEV tablet -------------------*/
 @media(min-width: 768px) and (max-width: 991px) {
-   
+
     .container {
         overflow: hidden;
     }
@@ -1907,7 +2285,7 @@ color: #FFFFFF;
     .img_prescription {
         width: 700px;
     }
-
+    
     .img_our_1 {
         width: 380px;
         height: 360px;
@@ -1919,7 +2297,8 @@ color: #FFFFFF;
 
     /* end our business details */
     /* start blog content page*/
-    .prescription video {
+   
+    .prescription_video {
         width: 690px !important;
 
     }
@@ -1937,7 +2316,7 @@ color: #FFFFFF;
     }
 
     .icon_lick_2 {
-        margin-right: 250px;
+        margin-right: 220px !important;
     }
 
 
@@ -1968,7 +2347,6 @@ color: #FFFFFF;
         z-index: 1;
         margin-top: -470px;
         margin-right: -480px;
-
     }
 
     .shep_box_img {
@@ -1993,13 +2371,18 @@ color: #FFFFFF;
         margin-right: 60px;
     }
 
-    .icon_lick_2 {
-        margin-right: 200px;
-    }
+
 
     .h1_blog {
         margin-top: 32px;
     }
+
+    .pagination {
+        margin: auto;
+        margin-top: 80px;
+        margin-right: 200px;
+    }
+
 
     /* start blog */
 
@@ -2073,80 +2456,88 @@ color: #FFFFFF;
 
     }
 
-    .box_mobiel_1{
+    .box_mobiel_1 {
         margin: auto;
         margin-top: 250px;
         width: 320px;
-        height: 320px;       
+        height: 320px;
         display: block;
     }
-    .box_mobiel_2{
+
+    .box_mobiel_2 {
         margin: auto;
         margin-top: 250px;
         width: 320px;
-        height: 320px; 
-        margin-right: 350px;      
-        display: block;
-    
-    }
-    .box_mobiel_3{
-        margin: auto;
-        margin-top: 615px;
-        width: 670px;
-        height: 395px;       
-        display: block;
-    
-    
-    }
-    .box_mobiel_4{
-        margin: auto;
-        margin-top: 1050px;
-        width: 320px;
-        height: 331px; 
-        margin-right: 345px;      
-        display: block;
-       
-    }
-    .box_mobiel_5{
-        margin: auto;
-        margin-top: 1055px;
-        width: 325px;
-        height: 320px;  
-        margin-right: -5px;     
-        display: block;
-    }
-    .box_mobiel_6{
-        margin: auto;
-        margin-top: 1405px;
-        width: 695px;
-        height: 400px;   
-        margin-right: -12px;    
-        display: block;
-        
-    
-    }
-    .box_mobiel_7{
-        margin: auto;
-        margin-top: 1822px;
-        width: 340px;
-        height: 340px; 
-        margin-right: -16px;
-        display: block;
-    }
-    .box_mobiel_8{
-        margin: auto;
-        margin-top: 1820px;
-        width: 340px;
-        height: 340px;  
-        margin-right: 340px;      
+        height: 320px;
+        margin-right: 350px;
         display: block;
 
     }
-    .box_mobiel_9{
+
+    .box_mobiel_3 {
+        margin: auto;
+        margin-top: 615px;
+        width: 670px;
+        height: 395px;
+        display: block;
+
+
+    }
+
+    .box_mobiel_4 {
+        margin: auto;
+        margin-top: 1050px;
+        width: 320px;
+        height: 331px;
+        margin-right: 345px;
+        display: block;
+
+    }
+
+    .box_mobiel_5 {
+        margin: auto;
+        margin-top: 1055px;
+        width: 325px;
+        height: 320px;
+        margin-right: -5px;
+        display: block;
+    }
+
+    .box_mobiel_6 {
+        margin: auto;
+        margin-top: 1405px;
+        width: 695px;
+        height: 400px;
+        margin-right: -12px;
+        display: block;
+
+
+    }
+
+    .box_mobiel_7 {
+        margin: auto;
+        margin-top: 1822px;
+        width: 340px;
+        height: 340px;
+        margin-right: -16px;
+        display: block;
+    }
+
+    .box_mobiel_8 {
+        margin: auto;
+        margin-top: 1820px;
+        width: 340px;
+        height: 340px;
+        margin-right: 340px;
+        display: block;
+
+    }
+
+    .box_mobiel_9 {
         margin: auto;
         margin-top: 2179px;
         width: 690px;
-        height: 395px;       
+        height: 395px;
         display: block;
         margin-right: -16px;
 
@@ -2155,28 +2546,34 @@ color: #FFFFFF;
 
     /* end our business  */
     /* start index*/
-    .hedar_content_r {
-        margin: auto;
-        margin-top: -100px !important;
+    .heder {
+        margin-right: 250px;
+        margin-top: 64px;
     }
 
-    .hedar_content_r p {
-        width: 360px;
+    .heder::before {
+        right: -20;
+        top: 1040px;
+    }
+
+    .box_slider {
+        margin-top: 400px;
+    }
+
+    .bg_abous_us::before {
+        right: 700px;
+    }
+
+    .box_abous_us ::before {
+        top: 220px;
+        right: 530px;
+        left: -500px;
 
     }
 
-    .hedar_content_r h2 {
-        margin: auto;
-        margin-top: -64px;
-    }
-
-    #img_sqere_hader_2 {
-        margin-right: 16px;
-    }
-
-    #img_sqere_hader {
-        margin-top: 360px;
-        margin-right: -100px;
+    #servies {
+        height: auto;
+        height: 35vh;
     }
 
     .servies p {
@@ -2190,7 +2587,7 @@ color: #FFFFFF;
     }
 
     .bg_abous_us {
-        height: 40vh;
+        height: 45vh;
     }
 
     .omar {
@@ -2222,13 +2619,90 @@ color: #FFFFFF;
         margin: auto;
         margin-right: -100px;
     }
+
     .item_5 {
         width: 90px;
         margin-top: 25px;
-    
+
     }
-    
+
     /* end index*/
+    /* start vr detils*/
+
+    .colar {
+        width: 255px;
+        height: 66px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    .colar_1 {
+        margin: auto;
+        margin-top: 14px;
+        margin-right: 32px;
+    }
+
+    .colar_2 {
+        margin: auto;
+        margin-right: 82px;
+        margin-top: 14px;
+
+    }
+
+    .colar_3 {
+        margin: auto;
+        margin-right: 130px;
+        margin-top: 14px;
+
+    }
+
+    .colar_4 {
+        margin: auto;
+        margin-right: 180px;
+        margin-top: 14px;
+
+    }
+
+    .h1_for_finger {
+        margin-right: 12px !important;
+        margin-top: 32px !important;
+    }
+
+    .h1_for_k {
+        margin-right: 12px !important;
+        margin-top: 32px !important;
+
+    }
+
+    .p_for_k {
+        margin-right: 12px !important;
+
+    }
+
+
+
+    .img_vr_k_2 img {
+        width: 690px;
+    }
+
+    .img_vr_k_3 img,
+    .img_vr_k_4 img {
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .img_vr_k_4 img {
+        width: 340px;
+    }
+
+    .img_vr_k_5 img {
+        width: 700px;
+        height: 465px;
+
+    }
+
+    /* end vr detils*/
+
     /* start footar*/
     .content_footer_center_1 {
         margin-right: 100px !important;
@@ -2266,7 +2740,8 @@ color: #FFFFFF;
         margin-right: -280px;
         margin-top: 52px !important;
     }
-    footer{
+
+    footer {
         margin-top: 32PX !important;
         height: 100%;
     }

@@ -18,7 +18,10 @@ function  Blog_content_page() {
 function  servies() {
     window.location.assign("our business.html");
   }
-  
+  $(document).ready(function (){
+  $('.single-item').slick();
+});
+
   $(document).ready(function (){
   $('.autoplay').slick({
     infinite: true,

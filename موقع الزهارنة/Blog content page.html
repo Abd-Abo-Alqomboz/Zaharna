@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="./assets/css/styel.css">
     <!-- anmation -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- video-->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.3/plyr.css" />
 
 </head>
 
@@ -71,8 +73,7 @@
         </div>
         <!-- float action buuton-->
         <div class="container">
-            <h1 class=" h1_blog_content_page text-right "> <span class="ml-2"><img
-                        src="./assets/img/colome.png"></span>نصائح لتنظيف خزانات المطبخ</h1>
+            <h1 class=" h1_blog_content_page text-right  mr-2">نصائح لتنظيف خزانات المطبخ</h1>
             <div class="row">
                 <div class="col- bg_icon_like mr-2 ml-2 mt-3">
                     <img class="icon_lick_3 pointer" src="./assets/img/icon_like.svg">
@@ -117,9 +118,16 @@
                     <p class="mt-4 ml-5"> مزج كأسين من الخل الأبيض مع كأس من الماء، ثمّ تبليل قطعة قماش نظيفة بالمزيج،
                         ثمّ مسح الخزائن بها من الخارج والداخل، وتجفيفها بقطعة قماش جافة، ويفضل تنظيف الخزائن بهذا المزيج
                         كل يوم لضمان الحصول على مزيج نظيف ولامع.</p>
-                    <video class="mt-4" width="742" height="387" controls>
-                        <source src="./assets/video/WhatsApp Video 2023-01-22 at 12.18.34 PM.mp4" type="video/mp4">
-                    </video>
+                        <div class="prescription_video" style="width: 742px; ">
+                            <video id="player"  playsinline controls data-poster="/path/to/poster.jpg">
+                                <source src="./assets/video/WhatsApp Video 2023-01-22 at 12.18.34 PM.mp4" type="video/mp4" />
+                              
+                                <!-- Captions are optional -->
+                                <track kind="captions" label="English captions" src="/path/to/captions.vtt" srclang="en" default />
+                              </video>
+
+                        </div>
+                       
                 </div>
                 <div class="col-12 text-right prescription mt-5" data-aos="fade-up">
                     <h1 class=""><span><img src="./assets/img/icon_Arrow.svg"></span> وصفة بيكربونات الصوديوم</h1>
@@ -140,7 +148,7 @@
             <div class="row" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="3500">
                 <div class=" col-md-6  col-lg-3 text-right mt-3 mt-5 content_blog_cntar pointer "
                     onclick="Blog_content_page()">
-                    <span class="icon_lick_2"> <img class="mr-2 mt-2" src="./assets/img/icon_like.svg"></span>
+                    <span class="icon_lick_2" id="icon_lick_2_mobiel"> <img class="mr-2 mt-2" src="./assets/img/icon_like.svg"></span>
                     <img src="./assets/img/img_blog_2.png" id="blog_img_center">
                     <h1 class="mt-4 mr-2"> نصائح لتنظيف خزانات المطبخ </h1>
                     <hr class="mt-4">
@@ -157,7 +165,7 @@
                 </div>
                 <div class=" col-md-6  col-lg-3 text-right mt-3 mt-5 content_blog_cntar pointer "
                     onclick="Blog_content_page()">
-                    <span class="icon_lick_2"> <img class="mr-2 mt-2" src="./assets/img/icon_like.svg"></span>
+                    <span class="icon_lick_2" id="icon_lick_2_mobiel"> <img class="mr-2 mt-2" src="./assets/img/icon_like.svg"></span>
                     <img src="./assets/img/img_blog_2.png" id="blog_img_center">
                     <h1 class="mt-4 mr-2"> نصائح لتنظيف خزانات المطبخ </h1>
                     <hr class="mt-4">
@@ -174,7 +182,7 @@
                 </div>
                 <div class=" col-md-6  col-lg-3 text-right mt-3 mt-5 content_blog_cntar  pointer"
                     onclick="Blog_content_page()">
-                    <span class="icon_lick_2"> <img class="mr-2 mt-2" src="./assets/img/icon_like.svg"></span>
+                    <span class="icon_lick_2" id="icon_lick_2_mobiel"> <img class="mr-2 mt-2" src="./assets/img/icon_like.svg"></span>
                     <img src="./assets/img/img_blog_2.png" id="blog_img_center">
                     <h1 class="mt-4 mr-2"> نصائح لتنظيف خزانات المطبخ </h1>
                     <hr class="mt-4">
@@ -191,7 +199,7 @@
                 </div>
                 <div class=" col-md-6 col-lg-3 text-right mt-3 mt-5 content_blog_cntar  pointer"
                     onclick="Blog_content_page()">
-                    <span class="icon_lick_2"> <img class="mr-2 mt-2" src="./assets/img/icon_like.svg"></span>
+                    <span class="icon_lick_2" id="icon_lick_2_mobiel"> <img class="mr-2 mt-2" src="./assets/img/icon_like.svg"></span>
                     <img src="./assets/img/img_blog_2.png" id="blog_img_center">
                     <h1 class="mt-4 mr-2"> نصائح لتنظيف خزانات المطبخ </h1>
                     <hr class="mt-4">
@@ -299,6 +307,13 @@
     <script src="./assets/js/main.js"></script>
     <!-- JavaScript anmaiton -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- viedo -->
+    <script src="https://cdn.plyr.io/3.7.3/plyr.js"></script>
+    <script>
+          const player = new Plyr('#player');
+
+    </script>
+
     <script>
         AOS.init();
     </script>
