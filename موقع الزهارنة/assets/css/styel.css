@@ -232,8 +232,8 @@ hr {
 }
 
 .pagination {
-    margin-right: 360px;
-    margin-top: 64px;
+    margin-right: 450px;
+    margin-top: 82px;
 }
 
 .page-item a {
@@ -1475,7 +1475,7 @@ footer ul li a:hover {
     border-radius: 100px;
     background-color: #FFFFFF;
     margin-right: 100px;
-    margin-top: 200px;
+    margin-top: 150px;
 }
 
 .img_k_1 {
@@ -1593,6 +1593,10 @@ footer ul li a:hover {
     border: 1px solid #E0A700;
     right: -35px;
     top: -5px;
+}
+.icon_done_1{
+    margin-left: 5px;
+    margin-top: 5px;
 }
 
 /*---------------------------------------------------------- end vr details  -------------------*/
@@ -1744,7 +1748,12 @@ footer ul li a:hover {
     .pagination {
         margin: auto;
         margin-top: 80px;
-        margin-right: 40px;
+        margin-right: 50px;
+    }
+    #navigation_mobiel{
+        margin-right: 20px;
+
+
     }
 
     /* end blog*/
@@ -2156,35 +2165,35 @@ footer ul li a:hover {
 
     .colar {
         width: 255px;
-        height: 66px;
+        height: 50px;
         margin: auto;
         margin-top: 40px;
     }
 
     .colar_1 {
         margin: auto;
-        margin-top: 14px;
+        margin-top: 8px;
         margin-right: 32px;
     }
 
     .colar_2 {
         margin: auto;
         margin-right: 82px;
-        margin-top: 14px;
+        margin-top: 8px;
 
     }
 
     .colar_3 {
         margin: auto;
         margin-right: 130px;
-        margin-top: 14px;
+        margin-top: 8px;
 
     }
 
     .colar_4 {
         margin: auto;
         margin-right: 180px;
-        margin-top: 14px;
+        margin-top: 8px;
 
     }
 
@@ -2219,6 +2228,7 @@ footer ul li a:hover {
         width: 360px;
         height: 238px;
     }
+   
 
     /* end vr detils*/
 
