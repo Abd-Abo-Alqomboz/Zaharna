@@ -1099,8 +1099,12 @@ footer ul li a:hover {
     position: absolute;
     z-index: 1;
 }
+.item_slider_heder img{
+    height: 43vh;
+    width: 100%;
 
-.item_slider_heder h1 {
+}
+/* .item_slider_heder h1 {
 
     font-family: 'Ubuntu';
     font-style: normal;
@@ -1125,7 +1129,7 @@ footer ul li a:hover {
     color: #000000;
     width: 400px;
 
-}
+} */
 
 .h1_index {
     font-family: 'Ubuntu';
