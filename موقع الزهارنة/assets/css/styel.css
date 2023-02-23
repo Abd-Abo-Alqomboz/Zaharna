@@ -704,6 +704,8 @@ footer ul li a:hover {
     color: #C2942D;
     background: none;
     border-bottom: 1px solid #E0A700;
+    padding-top: 16px;
+
 
 }
 
@@ -718,6 +720,7 @@ footer ul li a:hover {
     text-transform: uppercase;
     color: #FFFFFF;
     background: none;
+    padding-top: 16px;
 }
 
 .btn_navgation_bar_2:hover,
@@ -728,13 +731,12 @@ footer ul li a:hover {
 
 }
 
-.icon_dripsen img {
-    width: 20px;
-}
 
-.btn_navgation_bar_2 span img {
+
+.btn_navgation_bar_2 span svg {
     margin-top: -8px;
 }
+
 
 .box_mobiel_1 {
     position: absolute;
@@ -847,7 +849,6 @@ footer ul li a:hover {
 .img-8,
 .img_11,
 .img-5 {
-    margin-top: -280px;
     position: relative;
 
 }
@@ -855,7 +856,6 @@ footer ul li a:hover {
 
 .img_12 {
     position: relative;
-    margin-right: 20px !important;
 
 
 }
@@ -871,10 +871,28 @@ footer ul li a:hover {
     position: relative;
 }
 
+#img_o_P_4{
+    margin-right: 14px;
+}
+#img_o_P_2{
+    width: 555px !important;
+    margin-right: -10px;
+}
+#img_o_P_7{
+    margin-right: -12px;
+    margin-top: -20px;
+}
+#img_o_P_8{
+    margin-right: 12px;
+}
+#img_o_P_10{
+    margin-right: -12px;
+}
+
 .no {
     display: block;
     width: 100%;
-    height: 100;
+    height: 100%;
 }
 
 .overlay {
@@ -884,7 +902,7 @@ footer ul li a:hover {
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: 99%;
     opacity: 0;
     transition: .5s ease;
     background: rgba(134, 125, 24, 0.5);
@@ -893,14 +911,16 @@ footer ul li a:hover {
 
 .hovar_box:hover .overlay {
     opacity: 1;
-    height: 48%;
+    width: 91%;
+    margin-right: 14px;
     transition: all 0.6s ease-in-out;
 
 }
 
 .img-4:hover .overlay {
     opacity: 1;
-    height: 95%;
+    width: 91%;
+    margin-right: 25px;
     transition: all 0.6s ease-in-out;
 
 }
@@ -909,6 +929,8 @@ footer ul li a:hover {
 
 .img_3:hover .overlay {
     opacity: 1;
+    width: 91%;
+    margin-right: 25px;
     transition: all 0.6s ease-in-out;
 
 
@@ -916,36 +938,52 @@ footer ul li a:hover {
 
 .img_11:hover .overlay {
     opacity: 1;
-    height: 99%;
+    width: 90%;
+    margin-right: 14px;
     transition: all 0.6s ease-in-out;
+
 }
 
 .img_12:hover .overlay {
     opacity: 1;
+    width: 90%;
+    transition: all 0.6s ease-in-out;
+
+}
+.img_13:hover .overlay {
+    opacity: 1;
+    width: 95%;
+    margin-right: 14px;
     transition: all 0.6s ease-in-out;
 
 }
 
 .img_2:hover .overlay {
     opacity: 1;
+    width: 91%;
+    height: 101%;
+    transition: all 0.6s ease-in-out;
+
 
 }
 
 .img_1:hover .overlay {
     opacity: 1;
-    height: 48%;
+
     transition: all 0.6s ease-in-out;
 }
 
 .img-5:hover .overlay {
     opacity: 1;
-    height: 95%;
+    width: 90%;
+    margin-right: 15px;
     transition: all 0.6s ease-in-out;
 }
 
 .img-8:hover .overlay {
     opacity: 1;
-    height: 95%;
+    width: 90%;
+    margin-right: 15px;
     transition: all 0.6s ease-in-out;
 }
 
@@ -1926,39 +1964,37 @@ footer ul li a:hover {
         margin-top: 16px;
     }
 
-    #img_o_P_1 {
-        margin: auto;
-        margin-right: 16px !important;
-        width: 360px;
-    }
+   
 
-    #img_o_P_3,
+ 
     #img_o_P_2 {
-        width: 360px;
-        height: 360px;
-        margin: auto;
-        margin-top: -20px !important;
+    width: 360px !important;
+    height: 360px;
+    margin-right: 1px;
     }
 
     #img_o_P_4 {
-        margin-top: 300px !important;
         width: 360px;
         margin-right: 16px !important;
 
     }
 
-    #img_o_P_5,
-    #img_o_P_6 {
-        margin-top: 300px !important;
+    #img_o_P_5
+    {
+        margin-right: 16px !important;
+        width: 360px;
+
+    }
+    #img_o_P_6
+    {
+        margin-right: 16px !important;
         width: 360px;
 
     }
 
     #img_o_P_7 {
-        margin-top: 20px !important;
         margin-right: 16px !important;
         width: 360px;
-        height: 360px;
 
     }
 
@@ -1970,10 +2006,16 @@ footer ul li a:hover {
     }
 
     #img_o_P_9 {
+        margin-top: 40px !important;
+        width: 360px;
+        height: 400px;
+        margin-right: 14px;
+
+    }
+    #img_o_P_10 {
         margin-top: 20px !important;
         width: 360px;
-        width: 360px;
-        margin-right: -10px;
+        margin-right: 12px;
 
     }
 
@@ -2413,7 +2455,7 @@ footer ul li a:hover {
         margin-left: 120px;
     }
 
-    #img_o_P_1 {
+    /* #img_o_P_1 {
         margin: auto;
         margin-right: 16px !important;
         width: 320px;
@@ -2424,52 +2466,41 @@ footer ul li a:hover {
         height: 320px;
         margin: auto;
         margin-right: 12px;
-    }
+    } */
 
-    #img_o_P_3 {
+    /* #img_o_P_3 {
         width: 690px;
         height: 400px;
         margin-right: -10px;
-    }
+    } 
 
-    #img_o_P_4,
-    #img_o_P_5 {
-        margin-top: 320px;
-        width: 320px;
-        margin-right: 12px;
+  
+/* 
 
-
-    }
-
-    #img_o_P_6 {
-        margin-top: 310px;
-        width: 690px;
-        height: 400px;
-        margin-right: -10px;
-
-
-    }
-
+/* 
     #img_o_P_7 {
         width: 340px;
         height: 340px;
         margin-top: 16px;
     }
 
-    #img_o_P_8 {
-        width: 340px;
-        margin-top: 16px;
-
-    }
-
-    #img_o_P_9 {
-        width: 690px;
-        margin-top: 16px;
-        height: 400px;
-        margin-right: -20px;
-
-    }
-
+    
+*/
+#img_o_P_6 {
+    margin-right: 12px;
+  
+}
+    #img_o_P_5 {
+        margin-right: 12px;
+    } 
+    #img_o_P_7 {
+        margin-right: 12px;
+    } 
+   
+#img_o_P_10{
+    margin-top: 16px;
+    margin-right: 12px;
+}
     .box_mobiel_1 {
         margin: auto;
         margin-top: 250px;
